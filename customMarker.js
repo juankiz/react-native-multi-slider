@@ -1,13 +1,13 @@
 'use strict';
 
-var React = require('react-native');
-var {
-  PropTypes,
+const React = require('react');
+const { PropTypes } = React;
+const {
   StyleSheet,
   Image
-} = React;
+} = require('react-native');
 
-var CustomMarker = React.createClass({
+const CustomMarker = React.createClass({
 
   propTypes: {
     pressed: PropTypes.bool,

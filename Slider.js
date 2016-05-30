@@ -1,16 +1,16 @@
 'use strict';
 
-var React = require('react-native');
-var {
-  PropTypes,
+const React = require('react');
+const { PropTypes } = React;
+const {
   StyleSheet,
   PanResponder,
   View,
   TouchableHighlight
-} = React;
+} = require('react-native');
 
-var converter = require('./converter.js');
-var mockProps = require('./mockProps.js');
+const converter = require('./converter.js');
+const mockProps = require('./mockProps.js');
 
 
 
@@ -41,7 +41,7 @@ var sliderProps = {
   pressedMarkerStyle: View.propTypes.style
 };
 
-var Slider = React.createClass({
+const Slider = React.createClass({
 
   propTypes: sliderProps,
 

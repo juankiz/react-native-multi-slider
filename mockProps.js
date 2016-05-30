@@ -1,12 +1,12 @@
 'use strict';
 
-var React = require('react-native');
-var {
-  PropTypes,
+const React = require('react');
+const { PropTypes } = React;
+const {
   View,
-} = React;
+} = require('react-native');
 
-var BasicMarker = React.createClass({
+const BasicMarker = React.createClass({
 
   propTypes: {
     pressed: PropTypes.bool,
